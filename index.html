@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Notion</title>
+    <link rel="icon" href="Img/Logos/New Notion Logo transparente blanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styleindex.css">
+    <link rel="stylesheet" href="css/stylefooter.css">
+    <link rel="stylesheet" href="css/styleheader.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="promo-line">
+            <p>Descuentos de temporada 🔥</p>
+        </div>
+        <div class="logo">
+            <img src="Img/Logos/LOGO BLANCO.png" alt="New Notion">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#" id="catalogoLink" onclick="toggleSubmenu(event)">Catálogo</a>
+                    <ul class="submenu" id="catalogoSubmenu">
+                        <li><a href="pages/Hoddies.html">Hoodies</a></li>
+                        <li><a href="pages/Polos.html">Polos</a></li>
+                        <li><a href="pages/Buzos.html">Buzos</a></li>
+                        <li><a href="pages/Pantalones.html">Pantalones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#nosotros-imagen">Nosotros</a></li>
+                <li><a href="pages/Clientes.html">Clientes</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="#"><img src="img/Iconos/BOLSA.png" alt="Carrito"></a>
+            <a href="pages/Cuenta.html"><img src="img/Iconos/CUENTA.png" alt="Perfil"></a>
+        </div>
+    </header>
+
+    <!-- Catálogo de fotos -->
+    <div class="catalogo-container">
+        <div class="catalogo">
+            <img src="Img/Productos/general/1.jpg" class="active" alt="Imagen 1">
+            <img src="Img/Productos/general/2.jpg" alt="Imagen 2">
+            <img src="Img/Productos/general/3.jpg" alt="Imagen 3">
+            <img src="Img/Productos/general/4.jpg" alt="Imagen 4">
+        </div>
+    </div>
+    <!-- Fin del catálogo de fotos -->
+
+<!-- Sección de Beneficios -->
+<section id="beneficios">
+    <div class="beneficio">
+        <img src="img/iconos/Carro.png" alt="Envio">
+        <p><strong>Envíos gratis</strong> A lima y provincias por compras mayores a 200 soles</p>
+    </div>
+
+    <div class="beneficio">
+        <img src="img/iconos/pago.png" alt="Medio de pago">
+        <p><strong>Super descuentos</strong> con diferentes medios de pago seleccionados.</p>
+    </div>
+
+    <div class="beneficio">
+        <img src="img/iconos/regalo.png" alt="regalo">
+        <p><strong>Recibe Regalos</strong> por compras minimas en cada uno de tus pedidos.</p>
+    </div>
+</section>
+
+<!-- Sección de SALE -->
+<section id="sale">
+    <div class="sale-title-container">  
+        <h2 class="sale-title">SALE</h2> <!-- Título vacío para que solo aparezca el texto repetido -->
+    </div>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="Img/Productos/Sale/1.jpg" alt="Short 1">
+            <p class="product-name">SHORT VINTAGE 1.0</p>
+            <p class="product-price"><span class="price-original">S/90</span> <span class="price-discount">S/60.00 PEN</span></p>
+        </div>
+        <div class="product-card">
+            <img src="Img/Productos/Sale/2.jpg" alt="Short 2">
+            <p class="product-name">SHORT VINTAGE 2.0</p>
+            <p class="product-price"><span class="price-original">S/90</span> <span class="price-discount">S/60.00 PEN</span></p>
+        </div>
+        <div class="product-card">
+            <img src="Img/Productos/Sale/3.jpg" alt="Short 3">
+            <p class="product-name">SHORT VINTAGE 3.0</p>
+            <p class="product-price"><span class="price-original">S/90</span> <span class="price-discount">S/60.00 PEN</span></p>
+        </div>
+        <div class="product-card">
+            <img src="Img/Productos/Sale/4.jpg" alt="Short 4">
+            <p class="product-name">SHORT CARGO</p>
+            <p class="product-price"><span class="price-original">S/70.</span> <span class="price-discount">S/40.00 PEN</span></p>
+        </div>
+    </div>
+</section>
+
+    <section id="nosotros-imagen" class="nosotros-section">
+        <img src="Img/Productos/general/1nosotros.jpg" alt="Nosotros" class="nosotros-image">
+    </section>
+
+    <section class="imagen-texto">
+        <div class="texto">
+            <h2>NEW NOTION</h2>
+            <div class="cita">
+                <p>
+                    "Lo más importante es intentar e inspirar a las personas, para que ellos puedan ser más grandes en lo que sea que quieran hacer".
+                </p>
+            </div>
+            <div class="descripcion">
+                <p>
+                    Este proyecto es más que una marca de ropa, quiero hacer una comunidad de líderes, emprendedores, artistas, gente que esté ansiosa de conseguir su mejor versión.
+                </p>
+                <p>
+                    Piero Anticona Honores.
+                </p>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="Img/Productos/general/2nosotros.jpg" alt="Descripción de la imagen">
+        </div>
+    </section>
+
+    <section id="nosotros-imagen2" class="nosotros-section2">
+        <img src="Img/Productos/general/3nosotros.jpg" alt="Nosotros2" class="nosotros-image2">
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Columna Izquierda: Copyright y Redes Sociales -->
+            <div class="footer-column left-column">
+                <p>© 2024 - NEW NOTION</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/newnotionpe/?hl=es">
+                        <img src="img/Logos/IG.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@new.notion.pe">
+                        <img src="img/Logos/TIKTOK.png" alt="TikTok">
+                    </a>
+                    <a href="https://wa.link/qtz5no">
+                        <img src="img/Logos/WSP.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://es.pinterest.com/newnotiontrx/">
+                        <img src="img/Logos/PINTEREST.png" alt="Pinterest">
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Columna Derecha: Formulario de Suscripción y Preguntas Frecuentes -->
+            <div class="footer-column right-column">
+                <div class="subscription">
+                    <p>SUSCRÍBETE Y ENTÉRATE DE TODAS LAS NOVEDADES QUE TENEMOS PARA TI</p>
+                    <form id="suscripcionForm" action="#" method="post">
+                        <input type="email" name="email" placeholder="Correo Electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+    
+                <div class="faq-link">
+                    <a href="pages/Preguntas.html">PREGUNTAS FRECUENTES</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

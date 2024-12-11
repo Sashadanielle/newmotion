@@ -1,0 +1,99 @@
+/* Sección de reseñas */
+.reviews-section {
+    font-family: "Inter";
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.reviews-section h2 {
+    font-size: 3rem;
+    color: #000000;
+    text-align: center;
+
+}
+
+/* Estilos para el texto de reseñas */
+.customer-experience-text {
+    color: #333; /* Color del texto */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin: 30px 300px; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar el texto */
+}
+
+
+/* Estilos para el grid de reseñas */
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-auto-rows: auto; /* Ajuste dinámico según el contenido */
+    margin-top: 30px;
+}
+
+/* Caja de reseñas */
+.review {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #ccc;
+}
+
+/* Efecto al pasar el mouse por encima de la reseña */
+.review:hover {
+    transform: translateY(-10px);
+}
+
+/* Encabezado de la reseña */
+.review h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Párrafo de la reseña */
+.review p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px; /* Ajuste para mejorar separación */
+}
+
+/* Estrellas de satisfacción */
+.stars {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.stars i {
+    color: rgb(247, 191, 39); /* Color amarillo para las estrellas seleccionadas */
+    margin-right: 5px;
+}
+
+.stars .far {
+    color: #ccc; /* Color gris para las estrellas no seleccionadas */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 1200px) {
+    .review-grid {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    }
+}
+
+@media (max-width: 900px) {
+    .review-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    }
+}
+
+@media (max-width: 600px) {
+    .review-grid {
+        grid-template-columns: 1fr; /* Una columna */
+    }
+    .customer-experience-text{
+        margin: auto;
+    }
+}

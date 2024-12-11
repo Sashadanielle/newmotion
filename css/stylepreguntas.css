@@ -1,0 +1,77 @@
+main {
+    max-width: 100%; /* Ancho máximo de la sección principal */
+    margin: 20px auto; /* Centra la sección principal */
+    padding: 20px; /* Espaciado interno */
+    background: rgb(255, 255, 255); /* Fondo blanco para la sección principal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    font-family: 'Inter';
+}
+
+main h1 {
+    text-align: center; /* Centra el título */
+    color: #ffffff; /* Color llamativo para el título */
+    background-color: #701100; /* Fondo del título */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: 400;
+    font-size: 60px;
+    font-family: 'Bebas Neue';
+}
+
+/* Estilos para la sección de Preguntas Frecuentes */
+.faq {
+    display: grid; /* Usar grid para organizar los elementos */
+    grid-template-columns: 1fr; /* Una columna */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.faq-item {
+    text-align: center;
+    background-color: #f9f9f9; /* Fondo claro para las tarjetas */
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 0 5px rgba(29, 28, 28, 0.295); /* Sombra suave */
+    transition: transform 0.3s; /* Transición para el efecto hover */
+}
+
+.faq-item:hover {
+    transform: scale(1.02); /* Efecto de aumento en hover */
+}
+
+.faq-item h2 {
+    margin: 0; /* Sin margen para el título */
+    font-size: 2rem; /* Tamaño de fuente más grande */
+    color: #1e1e1e; /* Color del texto */
+}
+
+.faq-item p,
+.faq-item ul {
+    list-style-type: none; /* Sin puntos en la lista */
+    font-size: 1.5rem;
+    margin: 10px 0; /* Margen para párrafos y listas */
+}
+
+@media (max-width: 768px) {
+
+    main{
+        margin: 0px;
+    }
+    main h1{
+        font-size: 30px;
+    }
+
+    .faq-item h2{
+        font-size: 1.2rem;
+    }
+
+    .faq-item p{
+        font-size: 1rem;
+    }
+
+    .faq-item li{
+        font-size: 1rem;
+    }
+}

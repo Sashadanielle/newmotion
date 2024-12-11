@@ -1,0 +1,242 @@
+/* Inicio del estilo del catálogo */
+body{
+        font-family: 'Bebas Neue';
+}
+.catalogo-container {
+    overflow: hidden;
+}
+
+.catalogo {
+    position: relative;
+    overflow: hidden;
+    transition: opacity 1.5s ease-in-out; /* Efecto de desvanecido */
+}
+
+.catalogo img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+    opacity: 1; /* La imagen activa se muestra gradualmente */
+}
+
+.catalogo img.active {
+    display: block;
+}
+
+/* Estilo para la sección de Beneficios */
+#beneficios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 350px;
+    text-align: left;
+}
+
+.beneficio img {
+    width: 70px;
+    height: 70px;
+}
+
+.beneficio p {
+    text-align: justify;
+    font-size: 1.55rem;
+}
+
+.beneficio strong {
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #beneficios {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .beneficio p {
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+
+    .beneficio {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Sección de SALE */
+#sale {
+    text-align: center;
+    margin-top: 5px;
+    background-color: #ffffff;
+    position:sticky;
+}
+
+#sale h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #ffffff; /* Color del título "SALE" */
+    background-color: #000000;
+    position: relative;
+    padding: 5px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease; /* Animación suave al hacer hover */
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* Elevar el producto al hacer hover */
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-family: "Inter";
+    font-weight:900; 
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.product-price {
+    margin: 5px 0;
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: #888; /* Color gris para el precio original */
+    font-size: 1em; /* Tamaño del texto estándar */
+    margin-right: 10px; /* Espacio entre los precios */
+}
+
+.price-discount {
+    color: #e53935; /* Color rojo para el precio con descuento */
+    font-size: 1.4em; /* Tamaño más grande para destacar */
+    font-weight: bold; /* Negrita para resaltar */
+}
+
+.nosotros-section {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Asegura que la sección ocupe todo el ancho */
+}
+
+.nosotros-image {
+    display: block; /* Elimina cualquier comportamiento inline de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Asegura que la imagen no exceda el tamaño de la pantalla */
+}
+
+.imagen-texto {
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Alinear verticalmente */
+    margin: 40px; /* Espacio alrededor de la sección */
+    gap: 200px;
+}
+
+.texto {
+    flex: 1; /* Ocupa el espacio restante a la izquierda */
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+}
+
+.cita {
+    font-style: italic; /* Estilo cursivo para la cita */
+    margin: 50px 0; /* Espacio vertical */
+    padding: 10px; /* Espacio interno */
+    border-left: 5px solid #000000; /* Línea a la izquierda */
+    font-size: 30px; /* Tamaño de fuente para la cita */
+}
+
+.descripcion p {
+    margin: 30px 0px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 25px; 
+    margin: 0px 0; 
+    text-align: center;
+}
+
+.imagen img {
+    width: 455px; /* Hacer que la imagen ocupe todo el contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.nosotros-image2 {
+    max-width: 100%; /* Hace que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    object-fit: cover; /* Cubre todo el contenedor sin distorsionar la imagen */
+    margin-bottom: -6px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    .imagen img{
+        width: 100%;
+    }
+    .imagen-texto {
+        flex-direction: column; /* Apilar en columnas en pantallas pequeñas */
+        text-align: center; /* Centrar texto */
+        gap: 30px;
+    }
+    .texto, .imagen {
+        max-width: 100%; /* Hacer que ambas ocupen todo el espacio */
+        margin-left: 0; /* Eliminar margen izquierdo en pantallas pequeñas */
+    }
+
+    h2{
+        font-size: 60px;
+    }
+
+    .nosotros-image2, .nosotros-image{
+        max-width: 200%;
+    }
+
+    .product-card img{
+        max-width: 90%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Cambiar a dos columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Cambiar a una columna en pantallas muy pequeñas */
+    }
+}
+

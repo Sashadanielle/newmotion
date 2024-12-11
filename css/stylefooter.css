@@ -1,0 +1,173 @@
+/* Estilos básicos del footer */
+footer {
+    box-sizing: border-box;
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    font-family: 'Bebas Neue';
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 0 auto;
+    padding: 0;
+    flex-wrap: wrap; /* Permite que las columnas se acomoden cuando el espacio sea reducido */
+}
+
+/* Columnas del Footer */
+.footer-column {
+    flex: 1;
+    min-width: 300px; /* Asegura que las columnas no sean más pequeñas de lo necesario */
+}
+
+/* Contenido de la Columna Izquierda */
+.left-column p {
+    font-size: 3rem; /* Reducir el tamaño del texto para pantallas pequeñas */
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Efecto de escalado en hover */
+}
+
+/* Contenido de la Columna Derecha */
+.subscription {
+    text-align: center;
+}
+
+.subscription p {
+    font-size: 1.45rem;
+    margin-bottom: 15px;
+}
+
+.subscription form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscription input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 330px;
+    border-radius: 5px;
+    border: none;
+}
+
+.subscription button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #b80000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription button:hover {
+    background-color: #830000;
+}
+
+/* Estilo del Enlace de Preguntas Frecuentes */
+.faq-link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.faq-link a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.9rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: underline;
+}
+
+.faq-link a:hover {
+    color: rgb(77, 77, 77);
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+        padding: 20px ; /* Ajusta el padding general */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra el contenido verticalmente */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Apila las columnas verticalmente */
+        gap: 10px; /* Ajusta el espacio entre las columnas */
+        padding: 0 10px; /* Ajusta el padding lateral para pantallas pequeñas */
+        flex-grow: 1; /* Hace que el contenedor se expanda si hay espacio adicional */
+    }
+
+    .footer-column{
+        padding: 1px;
+        min-width: 10px;
+        height: 20px;
+    }
+
+    .social-icons {
+        justify-content: center; /* Centra los íconos sociales */
+        gap: 15px; /* Reduce el espacio entre los íconos */
+    }
+
+    .social-icons img {
+        width: 30px; /* Reduce el tamaño de los íconos sociales */
+        padding: 5px; /* Ajusta el padding dentro del ícono */
+    }
+
+    .left-column p {
+        font-size: 1.6rem; /* Reduce el tamaño del texto */
+        margin-bottom: 15px; /* Ajusta el espacio inferior */
+    }
+
+    .subscription form {
+        flex-direction: column; /* Apila los elementos del formulario */
+        gap: 10px; /* Ajusta el espacio entre los elementos */
+    }
+
+    .subscription input[type="email"] {
+        width: auto; /* Asegura que el campo se adapte al ancho de la pantalla */
+    }
+
+    .subscription button {
+        width: auto; /* Deja que el botón se ajuste automáticamente */
+        padding: 10px 20px; /* Ajusta el tamaño del botón */
+        font-size: 1rem; /* Reduce ligeramente el tamaño de fuente */
+    }
+
+    .faq-link a {
+        font-size: 1.5rem; /* Reduce el tamaño del texto del enlace */
+        padding: 5px; /* Reduce el padding del enlace */
+    }
+}
+
+
